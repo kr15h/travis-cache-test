@@ -13,5 +13,9 @@ jobs:
   - stage: stage 2
     script:
     - ls -l
+    - rm -rf cachedir
+  - stage: stage 3
+    script:
+    - ls -l
     - cd cachedir
     - ls -l
