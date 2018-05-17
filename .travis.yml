@@ -9,8 +9,7 @@ jobs:
   - stage: stage 1    
     script:
     - wget https://github.com/kr15h/openframeworks-rpi-image/releases/download/v1.0.3/raspbian_lite-2017-07-05-of_v0.10.0.img.zip
-    - mkdir cachedir
-    - mv ./*.img ./cachedir
+    - mv ./*.zip ./cachedir
   - stage: stage 2
     script:
     - ls -l
